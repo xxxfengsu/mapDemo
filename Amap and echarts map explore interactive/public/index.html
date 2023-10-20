@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script type="text/javascript">
+  window._AMapSecurityConfig = {
+    serviceHost: 'https://hdzhstcs.graland.cn:8791/_AMapService',
+  }
+</script>
+<script
+  src="https://webapi.amap.com/maps?v=1.4.15&amp;key=59ece4255869b7ecd626b5aeff3d8577&amp;plugin=AMap.Geocoder,AMap.Scale,AMap.Autocomplete,AMap.PlaceSearch,AMap.MouseTool,AMap.Driving,AMap.DistrictSearch"></script>
+<script src="//webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>
+<script src="./echarts.min.js"></script>
+<script src="./echarts-extension-amap.min.js"></script>
+
+</html>
